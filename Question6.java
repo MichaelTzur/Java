@@ -10,6 +10,7 @@ public class Question6 {
             int columnIndex1 = arr[0].length - 1, rowIndex2 = arr.length - 1;
 
             while (columnIndex1 > counter && matrixSymmetric) {
+                
                 if (arr[rowIndex1][columnIndex1] != arr[rowIndex2][columnIndex2]) {
                     matrixSymmetric = false;
                 }
