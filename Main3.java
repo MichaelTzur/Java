@@ -13,10 +13,12 @@ public class Main3 {
         int last = array.length - 1;
 
         while (first < last) {
-            if (array[first] + array[last] < 10) {
+            int sum = array[first] + array[last];
+            
+            if (sum < 10) {
                 first++;
             }
-            else if (array[first] + array[last] > 10){
+            else if (sum > 10){
                 last--;
             }
             else {
