@@ -2,7 +2,7 @@ public class Main3 {
 
     public static void main(String[] args) {
 
-        int[] array = {-10,-8,3,4,5,20,100,200};
+        int[] array = {-10,-8,-8,3,4,4,5,20,100,200};
 
         System.out.println(isSumOfTwoNumIsTen(array));
     }
@@ -18,7 +18,7 @@ public class Main3 {
             if (sum < 10) {
                 leftIndex++;
             }
-            else if (sum > 10){
+            else if (sum > 10) {
                 rightIndex--;
             }
             else {
