@@ -9,17 +9,17 @@ public class Main3 {
 
     private static boolean isSumOfTwoNumIsTen(int[] array) {
 
-        int first = 0;
-        int last = array.length - 1;
+        int leftIndex = 0;
+        int rightIndex = array.length - 1;
 
-        while (first < last) {
-            int sum = array[first] + array[last];
-            
+        while (leftIndex < rightIndex) {
+            int sum = array[leftIndex] + array[rightIndex];
+
             if (sum < 10) {
-                first++;
+                leftIndex++;
             }
             else if (sum > 10){
-                last--;
+                rightIndex--;
             }
             else {
                 return true;
