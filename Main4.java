@@ -14,9 +14,11 @@ public class Main4 {
 
         Map<Integer, Boolean> hashmap = new HashMap<>();
 
+        //value true = double, value false = single.
         for (int num : array) {
             hashmap.put(num, hashmap.containsKey(num));
         }
+        
         for (Integer key : hashmap.keySet()) {
             if (!hashmap.get(key)) {
                 return key;
