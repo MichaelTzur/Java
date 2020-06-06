@@ -9,7 +9,7 @@ public class Building {
 
     public Building() {
         Random random = new Random();
-        this.floors = new Floor[random.nextInt(2) + 3];
+        this.floors = new Floor[random.nextInt(3) + 3];
         Arrays.setAll(floors, i -> new Floor());
     }
 
