@@ -11,7 +11,7 @@ public class Building {
     private static Random random;
 
     public Building() {
-        this.random = new Random();
+        random = new Random();
         this.floors = new Floor[random.nextInt(3) + 3];
         Arrays.setAll(floors, i -> new Floor());
     }
