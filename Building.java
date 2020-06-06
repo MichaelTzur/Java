@@ -7,8 +7,10 @@ public class Building {
 
     private Floor[] floors;
 
+    //All random functions are invoked from one static object for memory efficiency. 
+    private static Random random = new Random();
+
     public Building() {
-        Random random = new Random();
         this.floors = new Floor[random.nextInt(3) + 3];
         Arrays.setAll(floors, i -> new Floor());
     }
@@ -49,11 +51,14 @@ public class Building {
         Person.Gender[] genders = Person.Gender.values();
         int age;
 
-        Random random = new Random();
         String name = names[random.nextInt(5)];
         Person.Gender gender = genders[random.nextInt(2)];
         age = random.nextInt(90);
 
         return new Person(name, gender, age);
+    }
+
+    public static Random getRandom() {
+        return random;
     }
 }
