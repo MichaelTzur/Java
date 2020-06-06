@@ -12,7 +12,7 @@ public class Building {
 
     public Building() {
         random = new Random();
-        this.floors = new Floor[random.nextInt(3) + 3];
+        floors = new Floor[random.nextInt(3) + 3];
         Arrays.setAll(floors, i -> new Floor());
     }
 
