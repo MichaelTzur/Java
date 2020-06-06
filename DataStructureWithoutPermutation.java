@@ -4,7 +4,6 @@ import java.util.*;
 
 public class DataStructureWithoutPermutation {
 
-    //In map, the key is unique.
     private static Map<String, Integer> map = new HashMap<>();
 
     private static void addNumToMap(int num) {
@@ -14,8 +13,10 @@ public class DataStructureWithoutPermutation {
         Arrays.sort(numDigits);
         //combine digits
         String strNum = String.join("", numDigits);
-        //add to map
-        map.put(strNum, num);
+        //check for permutation
+        if (!map.containsKey(strNum)) {
+            map.put(strNum, num);
+        }
     }
 
 //    public static void main(String[] args) {
