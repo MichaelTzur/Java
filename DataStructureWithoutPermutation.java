@@ -4,7 +4,7 @@ import java.util.*;
 
 public class DataStructureWithoutPermutation {
 
-    //In map, the key value is unique.
+    //In map, the key is unique.
     private static Map<String, Integer> map = new HashMap<>();
 
     private static void addNumToMap(int num) {
