@@ -8,7 +8,8 @@ public class Building {
     private Floor[] floors;
 
     public Building() {
-        this.floors = new Floor[4];
+        Random random = new Random();
+        this.floors = new Floor[random.nextInt(2) + 3];
         Arrays.setAll(floors, i -> new Floor());
     }
 
