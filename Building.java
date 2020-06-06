@@ -44,7 +44,7 @@ public class Building {
 
     private Person fillPersonWithMockData() {
 
-        String[] names = {"Asaf", "John", "Tal", "Sapir", "David"};
+        String[] names = {"Ariel", "Bar", "Tal", "Yarden", "Lior"};
         Person.Gender[] genders = Person.Gender.values();
         int age;
 
