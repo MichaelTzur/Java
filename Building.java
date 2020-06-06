@@ -8,9 +8,10 @@ public class Building {
     private Floor[] floors;
 
     //All random functions are invoked from one static object for memory efficiency. 
-    private static Random random = new Random();
+    private static Random random;
 
     public Building() {
+        this.random = new Random();
         this.floors = new Floor[random.nextInt(3) + 3];
         Arrays.setAll(floors, i -> new Floor());
     }
