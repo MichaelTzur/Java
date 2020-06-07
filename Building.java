@@ -9,7 +9,7 @@ public class Building {
 
     public Building() {
         ThreadLocalRandom random = ThreadLocalRandom.current();
-        floors = new Floor[random.nextInt(3,6)];
+        floors = new Floor[random.nextInt(3,6)]; //3-5 floors
         Arrays.setAll(floors, i -> new Floor());
     }
 
