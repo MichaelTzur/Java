@@ -6,9 +6,9 @@ import java.util.Map;
 
 public class DataStructureWithoutPermutation {
 
-    private static Map<String, Integer> map = new HashMap<>();
+    private static final Map<String, Integer> map = new HashMap<>();
 
-   private static void addNumToMap(int num) {
+    private static void addNumToMap(int num) {
         //create char array that contains the num digits separated
         char[] numDigits = String.valueOf(num).toCharArray();
         //sort digits in the array
