@@ -9,7 +9,7 @@ public class DataStructureWithoutPermutation {
     private static void addNumToMap(int num) {
         //create String array that contains the num digits separated
         String[] numDigits = String.valueOf(num).split("");
-        //sort digits
+        //sort digits in the array
         Arrays.sort(numDigits);
         //combine digits from the array to one String
         String strNum = String.join("", numDigits);
