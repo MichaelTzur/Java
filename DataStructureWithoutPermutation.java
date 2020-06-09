@@ -11,7 +11,7 @@ public class DataStructureWithoutPermutation {
         String[] numDigits = String.valueOf(num).split("");
         //sort digits
         Arrays.sort(numDigits);
-        //combine digits from the array
+        //combine digits from the array to one String
         String strNum = String.join("", numDigits);
         //check for permutation
         if (!map.containsKey(strNum)) {
