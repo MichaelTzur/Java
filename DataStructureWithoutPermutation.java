@@ -6,13 +6,13 @@ public class DataStructureWithoutPermutation {
 
     private static Map<String, Integer> map = new HashMap<>();
 
-    private static void addNumToMap(int num) {
-        //create String array that contains the num digits separated
-        String[] numDigits = String.valueOf(num).split("");
+   private static void addNumToMap(int num) {
+        //create char array that contains the num digits separated
+        char[] numDigits = String.valueOf(num).toCharArray();
         //sort digits in the array
         Arrays.sort(numDigits);
-        //combine digits from the array to one String
-        String strNum = String.join("", numDigits);
+        //convert the char array to String
+        String strNum = String.valueOf(numDigits);
         //check for permutation
         if (!map.containsKey(strNum)) {
             map.put(strNum, num);
