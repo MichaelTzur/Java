@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class DataStructureWithoutPermutation {
 
-    private static final Map<String, Integer> map = new HashMap<>();
+    private static Map<String, Integer> map = new HashMap<>();
 
     private static void addNumToMap(int num) {
         //create char array that contains the num digits separated
