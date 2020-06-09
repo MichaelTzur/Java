@@ -7,7 +7,7 @@ public class DataStructureWithoutPermutation {
     private static Map<String, Integer> map = new HashMap<>();
 
     private static void addNumToMap(int num) {
-        //separate digits to String array
+        //separate num digits to String array
         String[] numDigits = String.valueOf(num).split("");
         //sort digits
         Arrays.sort(numDigits);
