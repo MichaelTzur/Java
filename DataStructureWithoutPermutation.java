@@ -7,11 +7,11 @@ public class DataStructureWithoutPermutation {
     private static Map<String, Integer> map = new HashMap<>();
 
     private static void addNumToMap(int num) {
-        //separate digits
+        //separate digits to array
         String[] numDigits = String.valueOf(num).split("");
         //sort digits
         Arrays.sort(numDigits);
-        //combine digits
+        //combine digits from the array
         String strNum = String.join("", numDigits);
         //check for permutation
         if (!map.containsKey(strNum)) {
